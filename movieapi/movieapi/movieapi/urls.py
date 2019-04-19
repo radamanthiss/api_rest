@@ -23,7 +23,8 @@ from rest_framework import routers
 from movies.views import UserViewSet, MovieViewSet
 
 router = routers.DefaultRouter()
-router.register(r'api/users', UserViewSet)
+#router.register(r'api/users', UserViewSet)
+router.register(r'api/createusers', UserViewSet)
 router.register(r'api/movies', MovieViewSet)
 
 
